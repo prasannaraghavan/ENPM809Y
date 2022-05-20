@@ -1,0 +1,53 @@
+Follow the instrctions to start the simulation
+
+
+
+1. Building the Program and Tests
+
+```
+$ mkdir -p ~/catkin_ws/src
+$ cd ~/catkin_ws/
+$ catkin build
+$ source ./devel/setup.bash
+$ cd src/
+Paste the package in this folder
+$ cd ..
+$ catkin build
+$ source ./devel/setup.bash
+
+```
+
+2. Install necessary packages with install.bash
+
+```
+$ cd ~/catkin_ws/src/final_project/script
+$ catkin build
+$ chmod +x install.bash
+$ ./install.bash
+
+```
+
+3. Initiating roscore
+
+```
+Open Terminal
+$ roscore
+
+```
+
+4. Run program with a launch file
+
+```
+Open Terminal
+$ cd <path to catkin_ws>
+$ source devel/setup.bash
+$ roslaunch final_project multiple_robots.launch
+
+```
+
+5. Run the node for the operation
+
+```
+$ rosrun final_project final_project_node
+
+```
